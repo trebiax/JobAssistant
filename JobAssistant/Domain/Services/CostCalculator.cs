@@ -20,7 +20,7 @@ public class CostCalculator
         List<JobItem> items,
         MarginType margin)
     {
-        var dto = new CostAdjustingDto(margin);
+        var dto = new CostApplyingDto(margin);
 
         var costItems = items.Select(item =>
         {

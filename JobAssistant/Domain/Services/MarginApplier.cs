@@ -14,7 +14,7 @@ public class MarginApplier : ICostApplier
         _options = options.Value;
     }
 
-    public decimal Apply(List<JobItem> items, CostAdjustingDto dto)
+    public decimal Apply(List<JobItem> items, CostApplyingDto dto)
     {
         var percentage =
             dto.Margin == MarginType.Base

@@ -7,5 +7,5 @@ namespace JobAssistant.Domain.Services;
 /// </summary>
 public interface ICostApplier
 {
-    decimal Apply(List<JobItem> items, CostAdjustingDto dto);
+    decimal Apply(List<JobItem> items, CostApplyingDto dto);
 }

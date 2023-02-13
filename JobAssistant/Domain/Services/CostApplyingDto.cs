@@ -2,4 +2,4 @@
 
 namespace JobAssistant.Domain.Services;
 
-public record CostAdjustingDto(MarginType Margin);
+public record CostApplyingDto(MarginType Margin);
