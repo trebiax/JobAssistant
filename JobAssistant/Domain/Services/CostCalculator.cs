@@ -2,7 +2,6 @@
 using JobAssistant.Domain.Entities;
 using JobAssistant.Domain.Enums;
 using JobAssistant.Extensions;
-using Microsoft.Extensions.Options;
 
 namespace JobAssistant.Domain.Services;
 
@@ -18,44 +17,6 @@ public class CostCalculator
         _appliers = appliers;
         _adjusters = adjusters;
     }
-
-    // [TODO]: Write some tests
-
-    /*
-         {
-      "margin": 2,
-      "items": [
-        {
-          "name": "envelopes",
-          "price": 520,
-          "tax": 1
-        },
-        {
-          "name": "letterhead",
-          "price": 1983.37,
-          "tax": 2
-        }
-      ]
-    }
-
-    /////////////
-     {
-      "margin": 2,
-      "items": [
-        {
-          "name": "frisbees",
-          "price": 19385.38,
-          "tax": 2
-        },
-        {
-          "name": "yo-yos",
-          "price": 1829,
-          "tax": 2
-        }
-      ]
-    }
-     */
-
     public (decimal TotalCost, List<JobItemCost> Items) GetCosts(
         List<JobItem> items,
         MarginType margin)

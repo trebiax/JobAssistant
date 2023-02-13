@@ -1,6 +1,7 @@
 using JobAssistant.Extensions;
 using JobAssistant.QueryExecutors.GetCosts;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace JobAssistant.Controllers
 {
@@ -16,7 +17,11 @@ namespace JobAssistant.Controllers
         }
 
         [HttpPost]
-        public IActionResult Calculate(GetCostsQueryRequestDto dto)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Produces(typeof(GetCostsQueryResponseDto))]
+        [SwaggerRequestExample(typeof(GetCostsQueryRequestDto), typeof(GetCostsQueryRequestDtoExample))]
+        public IActionResult GetCosts(GetCostsQueryRequestDto dto)
             => _getCostsQuery.Execute(dto).ToActionResult();
     }
 }
