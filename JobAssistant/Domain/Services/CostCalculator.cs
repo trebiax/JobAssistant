@@ -1,5 +1,4 @@
 ﻿using JobAssistant.Domain.Dtos;
-using JobAssistant.Domain.Entities;
 using JobAssistant.Domain.Enums;
 using JobAssistant.Extensions;
 

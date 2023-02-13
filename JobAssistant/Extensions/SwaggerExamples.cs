@@ -1,4 +1,4 @@
-﻿using JobAssistant.Domain.Entities;
+﻿using JobAssistant.Domain.Dtos;
 using JobAssistant.Domain.Enums;
 using JobAssistant.QueryExecutors.GetCosts;
 using Swashbuckle.AspNetCore.Filters;

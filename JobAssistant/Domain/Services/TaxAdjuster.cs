@@ -1,4 +1,4 @@
-﻿using JobAssistant.Domain.Entities;
+﻿using JobAssistant.Domain.Dtos;
 using Microsoft.Extensions.Options;
 
 namespace JobAssistant.Domain.Services;

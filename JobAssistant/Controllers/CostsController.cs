@@ -6,7 +6,7 @@ using Swashbuckle.AspNetCore.Filters;
 namespace JobAssistant.Controllers
 {
     [ApiController]
-    [Route("calculation")]
+    [Route("api/costs")]
     public class CostsController : ControllerBase
     {
         private readonly GetCostsQuery _getCostsQuery;

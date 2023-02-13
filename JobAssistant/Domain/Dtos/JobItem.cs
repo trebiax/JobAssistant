@@ -1,6 +1,6 @@
 ﻿using JobAssistant.Domain.Enums;
 
-namespace JobAssistant.Domain.Entities;
+namespace JobAssistant.Domain.Dtos;
 
 public record JobItem(string Name, decimal Price, TaxType Tax)
 {

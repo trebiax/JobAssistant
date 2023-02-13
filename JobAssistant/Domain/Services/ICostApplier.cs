@@ -1,4 +1,4 @@
-﻿using JobAssistant.Domain.Entities;
+﻿using JobAssistant.Domain.Dtos;
 
 namespace JobAssistant.Domain.Services;
 

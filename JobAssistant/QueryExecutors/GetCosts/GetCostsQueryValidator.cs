@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using JobAssistant.Domain.Entities;
+using JobAssistant.Domain.Dtos;
 
 namespace JobAssistant.QueryExecutors.GetCosts
 {

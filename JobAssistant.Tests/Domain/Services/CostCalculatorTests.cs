@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using JobAssistant.Domain.Entities;
+using JobAssistant.Domain.Dtos;
 using JobAssistant.Domain.Enums;
 using JobAssistant.Domain.Services;
 using Microsoft.Extensions.Options;
